@@ -6,32 +6,43 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>GIPHY Search WebApp</title>
     <link rel="stylesheet" type="text/css" href="css/reset.css">
-   
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
     <link rel="stylesheet" type="text/css" href="assets/css/style.css">
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  
   </head>
 <body>
 <!-- TEST -->
-<h1>Giphy Test</h1>
+<nav class="navbar justify-content-center navbar-dark bg-dark">
+    <p>Giphy Search App</p>
+    </nav>
+
 
 <div class="container">
 
-<div id="topic-buttons">
-</div>
+    <div class="row d-flex justify-content-center">Click the topic buttons below to display Gifs.  Click the Gifs to toggle still/animated display.</div>  
+
+<div class="row">
+<div id="topic-buttons" class="col-md-12"></div>
+</div> 
 
 
-<form id="topic-form">
-    <label for="topic-input">Enter New Topic</label>
-    <input type="text" id="topic-input"><br>
 
-    <!-- Button triggers new topic to be added -->
-    <input id="add-topic" type="submit" value="Submit">
-  </form>
+<div class="row">
 
-  <div span id="gifs-display">
+
+  <div span id="gifs-display" class="col-md-9"></div>
+
+  <form id="topic-form" class="col-md-3 form-group card bg-light">
+      <label for="topic-input" class="card-text">Add A Gif Topic</label>
+      <input type="text" id="topic-input"><br>
+  
+      <!-- Button triggers new topic to be added -->
+      <input id="add-topic" class="btn btn-primary" type="submit" value="Submit">
+    </form>
+
+  <!-- end form row -->
   </div>
-
 
 
 

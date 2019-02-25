@@ -4,3 +4,8 @@ body{
     /* background: url("../images/LIC-night.JPG"); */
     /* background-size: 100%; */
 }
+
+.navbar{
+    color: white;
+    font-size: 30px;
+}
